@@ -20,8 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 html, body {
     height: 100%;
     line-height: 1;
-    font-size: 16px;
-    color: #000;
+    font-size: 14px;
+    color: #252B42;
+    font-weight: 500;
     font-family: Montserrat;
 }
 .wrapper {
@@ -31,5 +32,73 @@ html, body {
 
 ._container {
     max-width: 1046px;
+    padding: 0 15px;
     margin: 0 auto;
+    box-sizing: content-box;
 }/* технический класс, содержит общие стили*/
+
+/* ----------------Header----------- */
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+@media (max-width: 479px) {
+    .header__container {
+        min-height: 70px;
+    }
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: inherit;
+}
+.header__menu {
+    margin-left: 133px;
+}
+@media (max-width: 992px) {
+    .header__menu {
+        margin-left: 80px;
+    }
+}
+@media (max-width: 767px) {
+    .header__menu {
+        margin-left: 40px;
+    }
+}
+@media (max-width: 479px) {
+    .header__menu {
+        margin-left: 20px;
+    }
+}
+
+.menu {
+    padding: 5px 0;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__item {
+}
+.menu__item:not(:last-child){
+    margin-right: 21px;
+}
+.menu__link {
+    color: #737373;
+    font-weight: 600;
+    line-height: calc(24 / 14 * 100%);
+}
+@media (max-width: 479px) {
+    .menu__link {
+        font-size: 18px;
+    }
+}
