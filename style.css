@@ -132,6 +132,8 @@ html, body {
 }
 .page__advantages {
 }
+.page__practice {
+}
 
 /* ----------------HEADER-BLOCK----------- */
 
@@ -382,6 +384,40 @@ html, body {
     font-size: 16px;
     line-height: calc(24 / 16 * 100%);
     letter-spacing: 0.1px;
+}
+
+/* ----------------Practicce----------- */
+
+.practice {
+    padding: 125px 0 80px 0;
+}
+.practice__container {
+}
+.practice__header {
+    margin-bottom: 45px;
+}
+.practice__body {
+    margin: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.practice__column {
+    padding: 0 15px;
+    flex: 0 1 25%;
+}
+.practice__item {
+}
+.item-practice {
+}
+.item-practice__link {
+}
+.item-practice__title {
+}
+.item-practice__text {
+}
+.item-practice__image {
+}
+._ibg {
 }
 
 /* ----------------Footer----------- */
