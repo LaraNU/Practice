@@ -143,6 +143,8 @@ html, body {
 }
 .page__getintouch {
 }
+.page__contact {
+}
 
 /* ----------------HEADER-BLOCK----------- */
 
@@ -803,6 +805,60 @@ html, body {
     .getintouch__header {
         margin-bottom: 30px;
     }
+}
+
+/* ----------------Contact----------- */
+
+.contact {
+    background: #fff;
+    padding: 40px 0;
+}
+.contact__container {
+}
+.contact__content {
+    padding-bottom: 20px;
+} /* чтобы не было прилипания при уменьшении экрана */
+
+@media (min-width: 767px) {
+    .contact__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact__content {
+        padding-right: 20px;
+    }
+}
+.contact__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+}
+.contact__title:not(:last-child) {
+    margin-bottom: 10px;
+}
+.contact__text {
+    color: #737373;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+}
+.contact__button {
+    background: #FF7B47;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 40px;
+    min-height: 58px;
+    font-weight: 700;
+    line-height: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact__button:hover {
+    background: #ad5431;
+    transition: all 0.3s ease 0s;
 }
 
 /* ----------------Footer----------- */
